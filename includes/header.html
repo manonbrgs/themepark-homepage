@@ -1,0 +1,86 @@
+<header>
+    <!-- MENU -->
+    <div id="top-nav">
+        <a href="index.php" title="Accueil"><img src="assets/images/logo2.png" alt="Logo" id="logo"></a>
+        <i class="fa-solid fa-bars" id="open-menu"></i>
+        <div id="menu">
+            <i class="cp cp-cross" id="close-menu"></i>
+            <nav>
+                <ul>
+                    <li><a href="#" title="Parcs">Parcs</a></li>
+                    <li><a href="#" title="Hébergements">Hébergements</a></li>
+                    <li><a href="#" title="Restauration">Restauration</a></li>
+                    <li><a href="#" title="Billets et séjours">Billets et séjours</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn-outline" data="Me connecter" title="Connexion"><i class="fa-regular fa-user"></i></a>
+        </div>
+    </div>
+    <!-- IMAGE -->
+    <div id="header-img">
+        <img src="assets/images/header-img.jpg" alt="Château Disneyland">
+        <div id="header-text-content">
+            <h1>Bienvenue<br>au pays des rêves !</h1>
+            <p>Dans le Parc Disneyland, les classiques Disney de votre enfance et les légendes de Star Wars prennent vie ! Évadez-vous au pays des rêves qui deviennent réalité.</p>
+            <a href="#" class="btn" title="Découvrir le parc">Je découvre</a>
+        </div>
+    </div>
+    <!-- RÉSERVATION BILLETS -->
+    <div id="reservation">
+        <form action="#" method="POST" class="form">
+            <fieldset>
+                <label for="arrivee" class="form-title">
+                    <i class='bx bx-calendar'></i>
+                    Date d'arrivée
+                </label>
+                <input type="date" id="arrivee" name="date-arrivee" value="2021-01-25" min="2021-01-01" max="2024-12-31" required>                       
+            </fieldset>
+            <fieldset>
+                <label for="duree" class="form-title">
+                    <i class='bx bx-time'></i>
+                    Durée du séjour
+                </label>
+                <input type="number" id="duree" name="duree" min="1" max="100" placeholder="1 jour" required>                       
+            </fieldset>
+            <fieldset>
+                <div class="form-title">
+                    <i class='bx bx-user-plus'></i>
+                    Visiteurs
+                </div>
+                <div class="form-inline visiteurs">
+                    <div>
+                        <label for="adulte">Adulte(s)</label>
+                        <input type="number" id="adulte" name="adulte" min="0" max="100" placeholder="0" required>                       
+                    </div>
+                    <div>
+                        <label for="enfant">Enfant(s)</label>
+                        <input type="number" id="enfant" name="enfant" min="0" max="100" placeholder="0" required>                       
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-title">
+                    <i class='bx bxs-coupon' ></i>
+                    Billets
+                    <a href="#formules" title="En savoir plus">En savoir plus</a>
+                </div>
+                <div class="form-inline billets">
+                    <div>
+                        <input type="radio" id="parc" name="billets" value="parc"
+                               checked>
+                        <label for="parc">Billets parc</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="annuel" name="billets" value="annuel">
+                        <label for="annuel">Pass annuel</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="experiences" name="billets" value="experiences">
+                        <label for="experiences">Expériences</label>
+                    </div>
+                </div>
+            </fieldset>
+            <input class="btn" type="submit" value="Réserver" name="submit">  
+        </form>
+    </div>
+</header>
