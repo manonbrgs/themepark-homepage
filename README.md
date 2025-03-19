@@ -1,4 +1,4 @@
-# themepark-homepage
+# Theme Park Homepage
 
 ### Description
 Responsive homepage showcasing a featured theme park
